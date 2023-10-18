@@ -29,8 +29,4 @@ print("Login Button Exists")
 driver.find_element(By.XPATH, "//button[@type='submit']").click()
 driver.implicitly_wait(10)
 # Elements in the dashboard page are in different frames, to prove this i have printed "Main Frame" in the dashboard
-driver.find_element(By.XPATH, "//p[text()='Dashboard/ Home']")
-print("Main frame")
-# Below UI element does not get clicked because elements are in different frames,but no iframe found in the xpath and HTML
-# Automation will not be possible as the iframe is not recognised in the HTML code.
-driver.find_element(By.XPATH, "(//div[@role ='button']/div/span['Log Out'])[8]").click()
+
